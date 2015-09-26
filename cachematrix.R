@@ -12,6 +12,8 @@
 ## [1,]   -2  1.5
 ## [2,]    1 -0.5
 
+## These three functions running on my home platform conform to expected output.
+
 makecacheMatrix <- function(x = matrix()) {
         
         ## Set variable 'm' representing matrix inverse to NULL in parent 
@@ -80,7 +82,7 @@ cacheSolve <- function(x, ...) {
         
         m <- solve(data)
         
-        ## In global or parent environmet (?) call listed function 'setinverse'.
+        ## In parent environmet call listed function 'setinverse'.
         
         x$setinverse(m)
         
